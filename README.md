@@ -1,6 +1,6 @@
 # Simple Media Queries
 
-> [PostCSS][postcss] plugin for make simple (and **mobile first**) media queries.
+> [PostCSS](https://github.com/postcss/postcss) plugin for make simple (and **mobile first**) media queries.
 
 ## Install
 

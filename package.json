@@ -7,8 +7,8 @@
   	"media-queries",
   	"postcss-plugin"
   ],
-  "repository": "",
-  "homepage": "",
+  "repository": "eddiesigner/simple-media-queries",
+  "homepage": "https://github.com/eddiesigner/simple-media-queries",
   "description": "PostCSS plugin for simple media queries",
   "author": "Eduardo Gómez <this.eduardo@gmail.com>",
   "license": "MIT",
