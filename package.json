@@ -1,0 +1,26 @@
+{
+  "name": "postcss-simple-media-queries",
+  "version": "1.0.0",
+  "keywords": [
+  	"postcss",
+  	"css",
+  	"media-queries",
+  	"postcss-plugin"
+  ],
+  "repository": "",
+  "homepage": "",
+  "description": "PostCSS plugin for simple media queries",
+  "author": "Eduardo Gómez <this.eduardo@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require babel/register"
+  },
+  "dependencies": {
+    "postcss": "~5.0.14"
+  },
+  "devDependencies": {
+    "babel": "^5.5.6",
+    "mocha": "^2.2.5"
+  }
+}
