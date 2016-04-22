@@ -33,7 +33,7 @@ p {
 
 ## Usage
 
-This plugin needs to be executed **after** the [postcss-nested](https://github.com/postcss/postcss-nested) plugin.
+This plugin needs to be executed **before** the [postcss-nested](https://github.com/postcss/postcss-nested) plugin.
 
 ### PostCSS
 
