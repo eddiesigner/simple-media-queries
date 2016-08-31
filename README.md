@@ -44,7 +44,7 @@ var postcss_nested = require('postcss-nested');
 var simple_media_queries = require('postcss-simple-media-queries');
 var css = fs.readFileSync('input.css', 'utf8');
 
-var output = postcss([postcss_nested, simple_media_queries])
+var output = postcss([simple_media_queries, postcss_nested])
   .process(css)
   .css;
 ```
