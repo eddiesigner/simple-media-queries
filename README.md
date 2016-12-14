@@ -11,7 +11,7 @@ npm install --save-dev postcss-simple-media-queries
 ## Input / Output
 
 ```css
-/* Before */
+/* Input */
 p {
   margin: 0;
   @media (mq('medium')) {
@@ -19,7 +19,7 @@ p {
   }
 }
 
-/* After */
+/* Output */
 p {
   margin: 0;
 }
