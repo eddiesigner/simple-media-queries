@@ -43,22 +43,19 @@ module.exports = postcss.plugin('simple-media-queries', function simpleMediaQuer
     	media_config = copyProperties(options);
     }
 
-    css.walkRules(function(rule) {
-    	rule.walkDecls(function(decl, i) {
-    		var param = decl.parent.params;
-
+    css.walkAtRules(function(decl) {
+        var param = decl.params;
     		if (param != undefined) {
+          
     			if (param.indexOf('mq(') !== -1) {
     				var media_requested = param.match(/"[^\\"\n]*(\\["\\][^\\"\n]*)*"|'[^\\'\n]*(\\['\\][^\\'\n]*)*'|\/[^\\\/\n]*(\\[\/\\][^\\\/\n]*)*\//)[0].replace(/["']/g, "");
     				var media_string = 'only screen and ( min-width: ' + media_config[media_requested] + ' )';
 
     				// Return the media query as param.
-    				decl.parent.params = media_string;
+    				decl.params = media_string;
     			}
     		}
-    	});
     });
-
   }
 
 });
